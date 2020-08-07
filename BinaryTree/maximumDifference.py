@@ -12,7 +12,7 @@ class Node:
 a = Node(1000)
 a.left = Node(9)
 a.left.left = Node(3)
-a.left.right = Node(460)
+a.left.right = Node(-460)
 a.left.left.right = Node(1000)
 a.right = Node(400)
 
