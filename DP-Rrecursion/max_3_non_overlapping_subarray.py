@@ -1,3 +1,4 @@
+from functools import lru_cache
 
 def get_k_prefix_sums(arr, k):
 
@@ -22,6 +23,7 @@ def max_3_non_overlapping_recursive(arr, k):
 
     max_depth = 3
 
+    @lru_cache(maxsize=None)
     def helper(i, m):
         if i >= len(k_prefix_sums) or m == 0:
             return 0
